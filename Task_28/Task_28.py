@@ -7,4 +7,11 @@ def summ(a, b):
         return summ(a, b)
 
 
-print(summ(10, 100))
+try:
+    a = int(input('Введите число a '))
+    b = int(input('Введите число b '))
+    if (a < 0 or b < 0):
+        raise
+    print(summ(a, b))
+except:
+    print("Неккорекный ввод")
